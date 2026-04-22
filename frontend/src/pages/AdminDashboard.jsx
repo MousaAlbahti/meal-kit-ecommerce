@@ -50,10 +50,10 @@ const AdminDashboard = () => {
     if (user && user.role === 'admin') {
       try {
         const [oRes, cRes, pRes, uRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/orders/all', reqHeaders).catch(() => ({ data: [] })),
-          axios.get('http://localhost:5000/api/categories').catch(() => ({ data: [] })),
-          axios.get('http://localhost:5000/api/products').catch(() => ({ data: [] })),
-          axios.get('http://localhost:5000/api/auth/users', reqHeaders).catch(() => ({ data: [] }))
+          axios.get('https://meal-kit-ecommerce.onrender.com/api/orders/all', reqHeaders).catch(() => ({ data: [] })),
+          axios.get('https://meal-kit-ecommerce.onrender.com/api/categories').catch(() => ({ data: [] })),
+          axios.get('https://meal-kit-ecommerce.onrender.com/api/products').catch(() => ({ data: [] })),
+          axios.get('https://meal-kit-ecommerce.onrender.com/api/auth/users', reqHeaders).catch(() => ({ data: [] }))
         ]);
         setAllOrders(oRes.data);
         setMealCats(cRes.data);
@@ -89,7 +89,7 @@ const AdminDashboard = () => {
       data.append('categoryId', selectedCatId); 
       data.append('image', uploadedImg); 
 
-      const res = await axios.post('http://localhost:5000/api/products', data, {
+      const res = await axios.post('https://meal-kit-ecommerce.onrender.com/api/products', data, {
         headers: { ...reqHeaders.headers, 'Content-Type': 'multipart/form-data' },
       });
       
@@ -109,7 +109,7 @@ const AdminDashboard = () => {
   const removeMeal = async (id) => {
     if (!window.confirm("Drop this meal?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, reqHeaders);
+      await axios.delete(`https://meal-kit-ecommerce.onrender.com/api/products/${id}`, reqHeaders);
       setMenuItems(menuItems.filter(m => m._id !== id));
       notify({ title: "Removed successfully", status: "info" });
     } catch (err) { 
@@ -132,7 +132,7 @@ const AdminDashboard = () => {
       payload.append('categoryId', activeMeal.categoryId);
       if (newMealImg) payload.append('image', newMealImg);
 
-      const res = await axios.put(`http://localhost:5000/api/products/${activeMeal.id}`, payload, {
+      const res = await axios.put(`https://meal-kit-ecommerce.onrender.com/api/products/${activeMeal.id}`, payload, {
         headers: { ...reqHeaders.headers, 'Content-Type': 'multipart/form-data' },
       });
       
@@ -148,7 +148,7 @@ const AdminDashboard = () => {
     if (!catInput.trim()) return;
     setLoadingCat(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/categories', { name: catInput }, reqHeaders);
+      const res = await axios.post('https://meal-kit-ecommerce.onrender.com/api/categories', { name: catInput }, reqHeaders);
       setMealCats([...mealCats, res.data]); 
       setCatInput('');
       notify({ title: "Added category", status: "success" });
@@ -162,7 +162,7 @@ const AdminDashboard = () => {
   const dropCategory = async (id) => {
     if (!window.confirm("Delete this?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/categories/${id}`, reqHeaders);
+      await axios.delete(`https://meal-kit-ecommerce.onrender.com/api/categories/${id}`, reqHeaders);
       setMealCats(mealCats.filter(c => c._id !== id));
     } catch (err) { 
       notify({ title: "Error", status: "error" }); 
@@ -172,7 +172,7 @@ const AdminDashboard = () => {
   const saveCategory = async () => {
     if (!editingCat.title.trim()) return;
     try {
-      const res = await axios.put(`http://localhost:5000/api/categories/${editingCat.id}`, { name: editingCat.title }, reqHeaders);
+      const res = await axios.put(`https://meal-kit-ecommerce.onrender.com/api/categories/${editingCat.id}`, { name: editingCat.title }, reqHeaders);
       setMealCats(mealCats.map(c => c._id === editingCat.id ? res.data : c));
       closeCatModal(); 
     } catch (err) { 

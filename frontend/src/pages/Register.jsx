@@ -30,7 +30,7 @@ const Register = () => {
         address: { city, street, building } 
       };
 
-      const response = await axios.post('http://localhost:5000/api/auth/register', userData);
+      const response = await axios.post('https://meal-kit-ecommerce.onrender.com/api/auth/register', userData);
 
       dispatch(saveUserLogin({
         user: response.data.user, 

@@ -59,7 +59,7 @@ const Checkout = () => {
         paymentMethod: paymentMethod 
       };
 
-      await axios.post('http://localhost:5000/api/orders', orderData, config);
+      await axios.post('https://meal-kit-ecommerce.onrender.com/api/orders', orderData, config);
 
       dispatch(clearCart());
       
