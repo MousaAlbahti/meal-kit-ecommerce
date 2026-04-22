@@ -32,8 +32,8 @@ const Home = () => {
   const fetchData = async () => {
     try {
       const [productsRes, categoriesRes] = await Promise.all([
-        axios.get("http://localhost:5000/api/products"),
-        axios.get("http://localhost:5000/api/categories")
+        axios.get("https://meal-kit-ecommerce.onrender.com/api/products"),
+        axios.get("https://meal-kit-ecommerce.onrender.com/api/categories")
       ]);
       
       setProducts(productsRes.data);
