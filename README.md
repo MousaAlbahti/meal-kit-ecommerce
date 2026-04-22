@@ -6,7 +6,7 @@
 ## 📖 Overview
 Meal-Kit is a specialized e-commerce platform where users can browse, filter, and buy meal kits containing all necessary ingredients to cook at home. It includes a comprehensive Admin Dashboard to manage the entire ecosystem.
 
-### 🚀 [[Live Preview Here](https://YOUR_NETLIFY_LINK.netlify.app)](https://effulgent-crostata-6d013d.netlify.app/)
+### 🚀 [Live Preview Here](https://effulgent-crostata-6d013d.netlify.app/)
 *(Note: The backend is hosted on a free Render tier. It may take ~40 seconds to wake up during the first request.)*
 
 ---
@@ -54,11 +54,13 @@ meal-kit-ecommerce/
 │   └── server.js       # Entry Point
 ├── frontend/           # React Application
 │   ├── src/
-│   │   ├── redux/      # Cart & Auth Slices![Uploading لقطة شاشة 2026-04-22 220915.png…]()
+│   │   ├── redux/      # Cart & Auth Slices
 
 │   │   ├── components/ # Reusable UI Elements
 │   │   └── pages/      # Home, Checkout, Dashboard
 │   └── public/
 └── README.md
 
+<img width="1918" height="919" alt="لقطة شاشة 2026-04-22 220933" src="https://github.com/user-attachments/assets/2500fa57-9885-4f95-bf1f-6f8090181ccf" />
+![Uploading لقطة شاشة 2026-04-22 220915.png…]()
 
