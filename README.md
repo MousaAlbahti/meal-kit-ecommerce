@@ -1,13 +1,12 @@
 # 🥗 Meal-Kit E-Commerce Platform
 > A full-featured MERN Stack application for ordering and managing recipe-based meal kits.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-orange?style=for-the-badge)](https://YOUR_NETLIFY_LINK.netlify.app)
-[![Backend API](https://img.shields.io/badge/API-Render-blue?style=for-the-badge)](https://meal-kit-ecommerce.onrender.com)
+
 
 ## 📖 Overview
 Meal-Kit is a specialized e-commerce platform where users can browse, filter, and buy meal kits containing all necessary ingredients to cook at home. It includes a comprehensive Admin Dashboard to manage the entire ecosystem.
 
-### 🚀 [Live Preview Here](https://YOUR_NETLIFY_LINK.netlify.app)
+### 🚀 [[Live Preview Here](https://YOUR_NETLIFY_LINK.netlify.app)](https://effulgent-crostata-6d013d.netlify.app/)
 *(Note: The backend is hosted on a free Render tier. It may take ~40 seconds to wake up during the first request.)*
 
 ---
@@ -55,13 +54,11 @@ meal-kit-ecommerce/
 │   └── server.js       # Entry Point
 ├── frontend/           # React Application
 │   ├── src/
-│   │   ├── redux/      # Cart & Auth Slices
+│   │   ├── redux/      # Cart & Auth Slices![Uploading لقطة شاشة 2026-04-22 220915.png…]()
+
 │   │   ├── components/ # Reusable UI Elements
 │   │   └── pages/      # Home, Checkout, Dashboard
 │   └── public/
 └── README.md
 
-<img width="1918" height="919" alt="image" src="https://github.com/user-attachments/assets/80719bc5-326f-452f-b060-6eafdf0ac6c2" />
-
-<img width="1918" height="919" alt="image" src="https://github.com/user-attachments/assets/53dc7f9b-9c79-40c3-ba5f-f5a9829396e3" />
 
