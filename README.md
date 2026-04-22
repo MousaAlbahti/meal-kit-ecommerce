@@ -61,6 +61,10 @@ meal-kit-ecommerce/
 │   └── public/
 └── README.md
 
-<img width="1918" height="919" alt="لقطة شاشة 2026-04-22 220933" src="https://github.com/user-attachments/assets/2500fa57-9885-4f95-bf1f-6f8090181ccf" />
-![Uploading لقطة شاشة 2026-04-22 220915.png…]()
+---
 
+## 📸 Screenshots
+| Home Page | Admin Dashboard |
+|---|---|
+| ![Home](https://github.com/user-attachments/assets/2500fa57-9885-4f95-bf1f-6f8090181ccf) | ![Dashboard](ا<img width="1911" height="910" alt="لقطة شاشة 2026-04-22 220915" src="https://github.com/user-attachments/assets/d93ba088-ed47-4392-a463-99cac847d144" />
+) |
