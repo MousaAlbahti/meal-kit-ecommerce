@@ -65,4 +65,4 @@ meal-kit-ecommerce/
 ## 📸 Screenshots
 | Home Page | Admin Dashboard |
 |---|---|
-| ![Home](https://github.com/user-attachments/assets/d93ba088-ed47-4392-a463-99cac847d144) | ![Dashboard](https://github.com/user-attachments/assets/d93ba088-ed47-4392-a463-99cac847d144) |
+| ![Home](https://github.com/user-attachments/assets/d93ba088-ed47-4392-a463-99cac847d144) | ![Dashboard]([https://github.com/user-attachments/assets/d93ba088-ed47-4392-a463-99cac847d144](https://github.com/user-attachments/assets/2500fa57-9885-4f95-bf1f-6f8090181ccf)) |
