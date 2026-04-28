@@ -19,7 +19,7 @@ const CustomCard = ({ children, ...rest }) => (
 
 const AdminDashboard = () => {
   const { user, token } = useSelector((state) => state.auth);
-  const notify = useToast(); // changed from toast to notify
+  const notify = useToast();
 
   const [allOrders, setAllOrders] = useState([]);
   const [mealCats, setMealCats] = useState([]); 
