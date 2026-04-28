@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 const sendEmail = async (options) => {
   const transporter = nodemailer.createTransport({
-    service: 'gmail', 
+    service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -10,18 +10,18 @@ const sendEmail = async (options) => {
   });
 
   const mailOptions = {
-    from: `"Meal-Kit Support" <${process.env.EMAIL_USER}>`,
+    from: 'Meal-Kit Support 🥗 <no-reply@mealkit.com>', 
     to: options.email,
     subject: options.subject,
     text: options.message,
-    html: options.html,
+    html: options.html, 
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log("❌ Nodemailer Error: ", error.message);
+      console.log("❌ Email Error: ", error.message);
     } else {
-      console.log("✅ Email sent successfully: " + info.response);
+      console.log("✅ Email Success: " + info.response);
     }
   });
 };
